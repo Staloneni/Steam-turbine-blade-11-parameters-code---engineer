@@ -1,0 +1,10 @@
+# plot.plt
+set title "Fortran Example"
+set nokey
+set grid
+set xlabel "x" font "Times-Roman,8"
+set ylabel "y" font "Times-Roman,8"
+m="Wspolrzedne lopatki model nr 1.txt"
+plot [-2:30] [-2:30] m using 1:2 with points
+#:(sprintf("(%d, %d)", $1, $2)) with labels point  pt 7 offset char 1,1 notitle [-10:28] [-10:40] 
+
